@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Test2Sum {
     public static void main(String[] args) {
-        int[] array = {1,3,7,8};
+        int[] array = {1,3,6,8,9};
         int target = 10;
         twoSum test = new twoSum();
         int[] res = test.twoSumIndex(array, target);
