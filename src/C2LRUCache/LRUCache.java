@@ -8,6 +8,12 @@ public class LRUCache {
     final Node tail = new Node();
     Map<Integer, Node> nodeMap;
     int cacheCapacity;
+    static class Node{
+        int key;
+        int val;
+        Node prev;
+        Node next;
+    }
     public LRUCache(int capacity){
         nodeMap = new HashMap(capacity);
         this.cacheCapacity = capacity;
@@ -64,11 +70,4 @@ public class LRUCache {
             add(newNode);
         }
     }
-    static class Node{
-        int key;
-        int val;
-        Node prev;
-        Node next;
-    }
-
 }
