@@ -39,7 +39,7 @@ public class BFSOfIslands {
                 if(neighbourX > -1 && neighbourX < rows && neighbourY > -1 && neighbourY < cols
                 && grid[neighbourX][neighbourY] == '1'){
                     grid[neighbourX][neighbourY] = '0';
-                    neighbours.add(neighbourX * cols + neighbourY);
+                    neighbours.offer(neighbourX * cols + neighbourY);
                 }
             }
         }
